@@ -86,7 +86,7 @@ main {
   gap: 1rem;
 }
 
-.searchbar_container > input {
+.searchbar_container > .bar {
   border: 1px #86EFAC solid;
   background-color: #86EFAC;;
   border-radius: 1rem;
@@ -94,7 +94,7 @@ main {
   flex-grow: 1;
 }
 
-.searchbar_container > input:focus {
+.searchbar_container > .bar:focus {
   outline-width: 0;
 }
 
@@ -206,6 +206,11 @@ main {
   margin: 1.5rem 0rem;
 }
 
+.announcements {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .project {
   margin: 1rem;
   border-left: black solid 0.5rem;
@@ -249,4 +254,16 @@ main {
   align-items: center;
   padding-left: 1rem;
   gap: 1rem;
+}
+
+.icon,
+button {
+  filter: drop-shadow(1px 2px 0 rgb(184, 184, 184));
+}
+
+.icon:active,
+button:active,
+.user_image:active {
+  transform: translateY(4px) translateX(2px);
+  filter: drop-shadow(1px 1px 0 #666);
 }
