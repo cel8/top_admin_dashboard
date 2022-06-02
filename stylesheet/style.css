@@ -52,6 +52,13 @@ main {
   }
 }
 
+p,
+.content_title {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
 .nav > p, .settings > p, .home > p {
   font-weight: 600;
 }
